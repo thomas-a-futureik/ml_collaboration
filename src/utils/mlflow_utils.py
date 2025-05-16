@@ -2,7 +2,7 @@ import mlflow
 import os
 import sys
 
-mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+##mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
 
 def get_experiment_id(name):
     exp = mlflow.get_experiment_by_name(name)

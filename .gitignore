@@ -174,7 +174,7 @@ cython_debug/
 .pypirc
 
 # Data
-.data
+.data/
 models
 videos
 raw

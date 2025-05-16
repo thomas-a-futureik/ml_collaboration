@@ -6,6 +6,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / 'data'
 RAW_IMAGES_DIR = DATA_DIR / 'raw'  # Source of original images
 PROCESSED_DIR = DATA_DIR / 'processed'  # Where processed images will go
+MODEL_DIR = PROJECT_ROOT / 'models'
 
 # Data split ratios (must sum to 1.0)
 TRAIN_RATIO = 0.7

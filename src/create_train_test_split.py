@@ -20,7 +20,7 @@ def get_images():
     
     return images
 
-def copy_images(images, split_name):
+def copy_images(images, split_name ,task_name="gender"):
     """Copy images to their respective split and class directories."""
     for img_path in tqdm(images, desc=f"Copying {split_name} images"):
         try:
@@ -34,7 +34,7 @@ def copy_images(images, split_name):
             class_name = CLASS_MAPPING[class_dir]
             
             # Create destination directory
-            dest_dir = PROCESSED_DIR / split_name / class_name
+            dest_dir = PROCESSED_DIR /task_name/split_name / class_name
             dest_dir.mkdir(parents=True, exist_ok=True)
             
             # Copy the image
